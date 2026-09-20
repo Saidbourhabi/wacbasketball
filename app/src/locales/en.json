@@ -31,8 +31,67 @@
     "store": "Store",
     "tickets": "Tickets"
   },
-  "footerTagline": "Building global experiences.",
-  "footerCopyright": "Wydad Athletic Club. All rights reserved.",
-  "jumbotronBTN": "Contact Us"
+  "footerCopyright": "Wydad Athletic Club Basketball. All rights reserved.",
+  "jumbotronBTN": "Contact Us",
+  "footer": {
+    "cta": {
+      "headline": "Wydad Athletic Club Basketball – Red Passion Forever",
+      "subtitle": "Follow the latest news, match results, and exclusive club content. Join the Red Family today.",
+      "button": "Contact the Club"
+    },
+    "columns": {
+      "club": {
+        "heading": "Club",
+        "history": "History",
+        "trophies": "Trophies",
+        "management": "Management",
+        "stadium": "Stadium",
+        "supporters": "Supporters"
+      },
+      "teams": {
+        "heading": "Teams",
+        "mens": "Men's Team",
+        "womens": "Women's Team",
+        "u23": "U23 Squad",
+        "u19": "U19 Squad",
+        "u17": "U17 Squad",
+        "academy": "Academy"
+      },
+      "matches": {
+        "heading": "Matches",
+        "fixtures": "Fixtures",
+        "results": "Results",
+        "standings": "Standings"
+      },
+      "media": {
+        "heading": "Media",
+        "news": "News",
+        "gallery": "Gallery",
+        "press": "Press Releases"
+      },
+      "info": {
+        "heading": "Club Info",
+        "about": "About WAC",
+        "contact": "Contact",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Use",
+        "sponsors": "Sponsors"
+      }
+    },
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "threads": "Threads",
+      "twitter": "Twitter",
+      "youtube": "YouTube",
+      "tiktok": "TikTok"
+    },
+    "bottom": {
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "sitemap": "Sitemap",
+      "contact": "Contact Us",
+      "cookies": "Cookie Policy"
+    }
+  }
 }
-

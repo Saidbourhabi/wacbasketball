@@ -54,7 +54,7 @@ export default function LatestNewsSwiper() {
       <div className="mx-auto max-w-md sm:max-w-3xl lg:max-w-6xl ">
         {/* Header: Title left, Nav right */}
         <div className="mb-6 flex items-center justify-between gap-4">
-          <h1 className="text-3xl font-extrabold uppercase tracking-wider text-white sm:text-4xl lg:text-4xl">
+          <h1 className="text-3xl font-extrabold uppercase tracking-wider text-[#fc0000] sm:text-4xl lg:text-4xl">
             Latest News
           </h1>
 
@@ -102,10 +102,10 @@ export default function LatestNewsSwiper() {
                 <img
                   src={article.image}
                   alt={article.headline}
-                  className="absolute inset-0 border-2 border-white h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 "
+                  className="absolute inset-0 border-2 border-[#fc0000] h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 "
                   loading="lazy"
                 />
-                <div className="absolute inset-x-0 bottom-0 p-5 text-white md:p-6">
+                <div className="absolute inset-x-0 bg-linear-to-t from-[#000000cf] to-transparent bottom-0 p-5 text-white md:p-6">
                   <span className=" inline-block text-[11px] font-semibold uppercase tracking-wider text-white ">
                     {CATEGORY_LABELS[article.category] || article.category}
                   </span>

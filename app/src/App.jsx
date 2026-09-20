@@ -11,6 +11,7 @@ import Contact from './pages/contact/Contact';
 import Fixtures from './pages/fixtures/Fixtures';
 import Results from './pages/results/Results';
 import Standings from './pages/standings/Standings';
+import Management from './pages/club/Management';
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
         <Route path="/fixtures" element={<Fixtures />} />
         <Route path="/results" element={<Results />} />
         <Route path="/standings" element={<Standings />} />
+        {/* // *The Club */}
+        <Route path="/club/management" element={<Management />} />
       </Route>
         {/* // !Not Found */}
       <Route path="*" element={<NotFound />} />

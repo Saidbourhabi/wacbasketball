@@ -13,9 +13,9 @@ const Home = () => {
             <link rel="canonical" href="https://myapp.com/home" />
         </Helmet>
             <GameHero />
-            <SocialSection />
             <LatestNewsSwiper />
             <ImageGallerySection />
+            <SocialSection />
         </main>
     );
 };

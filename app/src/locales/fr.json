@@ -15,7 +15,7 @@
     "club_management": "Gestion",
     "club_sponsors": "Sponsors",
     "club_memberships": "Adhésions",
-    "club_contact": "Adhésions",
+    "club_contact": "Contactez-nous",
     "schedule_results": "Calendrier et Résultats",
     "schedule_results_results": "Résultats",
     "schedule_results_fixtures": "Matchs",
@@ -31,7 +31,67 @@
     "store": "Boutique",
     "tickets": "Billets"
   },
-  "footerTagline": "Créer des expériences globales.",
-  "footerCopyright": "Wydad Athletic Club. Tous droits réservés.",
-  "jumbotronBTN": "Contactez-nous"
+  "footerCopyright": "Wydad Athletic Club Basketball. Tous droits réservés.",
+  "jumbotronBTN": "Contactez-nous",
+  "footer": {
+    "cta": {
+      "headline": "Wydad Athletic Club Basketball – La Passion Rouge pour Toujours",
+      "subtitle": "Suivez les dernières actualités, les résultats des matchs et le contenu exclusif du club. Rejoignez la Famille Rouge dès aujourd'hui.",
+      "button": "Contacter le Club"
+    },
+    "columns": {
+      "club": {
+        "heading": "Club",
+        "history": "Histoire",
+        "trophies": "Trophées",
+        "management": "Gestion",
+        "stadium": "Stade",
+        "supporters": "Supporters"
+      },
+      "teams": {
+        "heading": "Équipes",
+        "mens": "Équipe Masculine",
+        "womens": "Équipe Féminine",
+        "u23": "Équipe U23",
+        "u19": "Équipe U19",
+        "u17": "Équipe U17",
+        "academy": "Académie"
+      },
+      "matches": {
+        "heading": "Matchs",
+        "fixtures": "Calendrier",
+        "results": "Résultats",
+        "standings": "Classement"
+      },
+      "media": {
+        "heading": "Médias",
+        "news": "Actualités",
+        "gallery": "Galerie",
+        "press": "Communiqués de Presse"
+      },
+      "info": {
+        "heading": "Infos Club",
+        "about": "À Propos du WAC",
+        "contact": "Contact",
+        "privacy": "Politique de Confidentialité",
+        "terms": "Conditions d'Utilisation",
+        "sponsors": "Sponsors"
+      }
+    },
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "threads": "Threads",
+      "twitter": "Twitter",
+      "youtube": "YouTube",
+      "tiktok": "TikTok"
+    },
+    "bottom": {
+      "terms": "Conditions de Service",
+      "privacy": "Politique de Confidentialité",
+      "sitemap": "Plan du Site",
+      "contact": "Contactez-Nous",
+      "cookies": "Politique de Cookies"
+    }
+  }
 }

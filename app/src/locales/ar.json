@@ -1,10 +1,10 @@
 {
-    "header": {
+  "header": {
     "signin": "تسجيل الدخول",
     "myAccount": "حسابي",
     "logout": "تسجيل الخروج"
   },
-    "navigation": {
+  "navigation": {
     "home": "الرئيسية",
     "news": "الأخبار",
     "club": "النادي",
@@ -15,7 +15,7 @@
     "club_management": "الإدارة",
     "club_sponsors": "الرعاية",
     "club_memberships": "العضويات",
-    "club_contact": "العضويات",
+    "club_contact": "اتصل بنا",
     "schedule_results": "الجدول والنتائج",
     "schedule_results_results": "النتائج",
     "schedule_results_fixtures": "المباريات",
@@ -31,7 +31,67 @@
     "store": "المتجر",
     "tickets": "التذاكر"
   },
-    "footerTagline": "بناء تجارب عالمية.",
-    "footerCopyright": "نادي الوداد الرياضي. جميع الحقوق محفوظة.",
-    "jumbotronBTN": "اتصل بنا"
+  "footerCopyright": "نادي الوداد الرياضي. جميع الحقوق محفوظة.",
+  "jumbotronBTN": "اتصل بنا",
+  "footer": {
+    "cta": {
+      "headline": "نادي الوداد الرياضي – شغف أحمر إلى الأبد",
+      "subtitle": "تابع آخر الأخبار ونتائج المباريات والمحتوى الحصري للنادي. انضم إلى العائلة الحمراء اليوم.",
+      "button": "اتصل بالنادي"
+    },
+    "columns": {
+      "club": {
+        "heading": "النادي",
+        "history": "التاريخ",
+        "trophies": "الكؤوس",
+        "management": "الإدارة",
+        "stadium": "الملعب",
+        "supporters": "الجماهير"
+      },
+      "teams": {
+        "heading": "الفرق",
+        "mens": "الفريق الرجالي",
+        "womens": "الفريق النسائي",
+        "u23": "فريق U23",
+        "u19": "فريق U19",
+        "u17": "فريق U17",
+        "academy": "الأكاديمية"
+      },
+      "matches": {
+        "heading": "المباريات",
+        "fixtures": "الجدول",
+        "results": "النتائج",
+        "standings": "الترتيب"
+      },
+      "media": {
+        "heading": "الإعلام",
+        "news": "الأخبار",
+        "gallery": "الصور",
+        "press": "البيانات الصحفية"
+      },
+      "info": {
+        "heading": "معلومات النادي",
+        "about": "عن الوداد",
+        "contact": "اتصل بنا",
+        "privacy": "سياسة الخصوصية",
+        "terms": "شروط الاستخدام",
+        "sponsors": "الرعاة"
+      }
+    },
+    "social": {
+      "facebook": "فيسبوك",
+      "instagram": "إنستغرام",
+      "threads": "ثريدز",
+      "twitter": "تويتر",
+      "youtube": "يوتيوب",
+      "tiktok": "تيك توك"
+    },
+    "bottom": {
+      "terms": "شروط الخدمة",
+      "privacy": "سياسة الخصوصية",
+      "sitemap": "خريطة الموقع",
+      "contact": "اتصل بنا",
+      "cookies": "سياسة ملفات تعريف الارتباط"
+    }
+  }
 }
