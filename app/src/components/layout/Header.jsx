@@ -29,8 +29,8 @@ const navigation = [
     key: 'schedule_results',
     items: [
       { name: 'Fixtures', href: '/fixtures', key: 'schedule_results_fixtures' },
-      { name: 'Results', href: '/fixtures/results', key: 'schedule_results_results' },
-      { name: 'Standings', href: '/fixtures/standings', key: 'schedule_results_standings' },
+      { name: 'Results', href: '/results', key: 'schedule_results_results' },
+      { name: 'Standings', href: '/standings', key: 'schedule_results_standings' },
     ],
   },
   {
@@ -121,9 +121,10 @@ function AuthDropdown({ user, logout }) {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-[#fc0000]  shadow-lg py-2 z-50 border border-white">
+        <div className="absolute right-0 mt-2 w-48 bg-[#fc0000] shadow-lg py-2 z-50 border border-white">
           <Link
             to="/profile"
+            onClick={() => setIsOpen(false)}
             className="flex items-center gap-2 px-4 py-2 text-white hover:bg-[#fc0000] hover:text-black"
           >
             <FaUserCircle className="w-4 h-4" />
@@ -146,14 +147,9 @@ export default function Header() {
   const { isAuthenticated, user, loginWithRedirect, logout } = useAuth0();
   const { t } = useTranslation();
 
-  // Helper function to get translated navigation name
-  // const getNavName = (navKey) => {
-  //   return t(`navigation.${navKey}`, navKey);
-  // };
-
   return (
     <Disclosure as="nav" className="fixed top-0 left-0 right-0 z-40 border-b-2 border-white bg-[#fc0000]">
-      {({ open }) => (
+      {({ open, close }) => (
         <>
           <div className="mx-auto max-w-8xl">
             <div className="relative flex h-16 items-center justify-between">
@@ -177,7 +173,11 @@ export default function Header() {
                   {navigation
                     .filter((item) => item.key === 'store' || item.key === 'tickets')
                     .map((item) => (
-                      <StoreTicketLink key={item.key} href={item.href} translationKey={`navigation.${item.key}`} />
+                      <StoreTicketLink
+                        key={item.key}
+                        href={item.href}
+                        translationKey={`navigation.${item.key}`}
+                      />
                     ))}
                 </div>
               </div>
@@ -192,7 +192,7 @@ export default function Header() {
                     className="flex items-center justify-center gap-2 cursor-pointer w-full px-4 py-2 text-white hover:bg-white hover:text-[#fc0000]"
                   >
                     <span>{t('header.signin')}</span>
-                    <FaUserCircle className='text-xl'/>
+                    <FaUserCircle className="text-xl" />
                   </button>
                 )}
               </div>
@@ -204,11 +204,7 @@ export default function Header() {
             <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
               {navigation.map((item) =>
                 item.items ? (
-                  <Disclosure
-                    key={item.name}
-                    as="div"
-                    className="py-1"
-                  >
+                  <Disclosure key={item.name} as="div" className="py-1">
                     {({ open: sectionOpen }) => (
                       <>
                         <DisclosureButton className="flex w-full cursor-pointer items-center justify-between px-3 py-2 text-base font-medium text-white hover:bg-[#fc0000] hover:text-white">
@@ -239,6 +235,7 @@ export default function Header() {
                               key={subItem.name}
                               as={Link}
                               to={subItem.href}
+                              onClick={close}
                               className="block px-3 py-2 text-sm text-white hover:bg-[#fc0000] hover:text-white"
                             >
                               {t(`navigation.${subItem.key}`)}
@@ -253,6 +250,7 @@ export default function Header() {
                     key={item.name}
                     as={Link}
                     to={item.href}
+                    onClick={close}
                     className="block px-3 py-2 text-base font-medium text-white hover:bg-[#fc0000] hover:text-white"
                   >
                     {t(`navigation.${item.key}`)}

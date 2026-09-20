@@ -3,6 +3,7 @@ import { Tab } from '@headlessui/react';
 import { getAllNews } from '../../utils/contentful';
 import NewsCard from '../../components/news/NewsCard';
 import bannerImage from '../../assets/banner.webp';
+import { Helmet } from 'react-helmet-async';
 
 const CATEGORIES = [
   { label: 'All', value: 'all' },
@@ -55,6 +56,11 @@ export default function News() {
 
   return (
     <section className="my-12">
+        <Helmet >
+          <title>News - Latest News</title>
+          <meta name="description" content="This is the latest news page." />
+          <link rel="canonical" href="https://wacbasketball.vercel.app/news" />
+        </Helmet>
       {/* Page Banner */}
       <div
         className="relative flex min-h-50 w-full items-center justify-start bg-cover bg-center bg-no-repeat md:min-h-90"
@@ -84,7 +90,7 @@ export default function News() {
                   key={cat.value}
                   className={({ selected }) =>
                     classNames(
-                      'cursor-pointer px-5 py-2.5 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-brand-red focus:ring-offset-2',
+                      'cursor-pointer px-5 py-2.5 text-sm font-medium transition-colors ',
                       selected
                         ? 'bg-[#fc0000] text-white'
                         : 'bg-transparent text-black hover:bg-[#fc0000] hover:text-white'

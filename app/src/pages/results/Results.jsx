@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { getUpcomingGames } from '../../utils/contentful';
+import { getFinishedGames } from '../../utils/contentful';
 import GamesByMonth from '../../components/main/GamesByMonth';
 import bannerImage from '../../assets/banner.webp';
 import Breadcrumb from '../../components/main/Breadcrumb';
 import { Helmet } from 'react-helmet-async';
 
-export default function Fixtures() {
+export default function Results() {
   const [games, setGames] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -14,7 +14,7 @@ export default function Fixtures() {
 
     async function load() {
       setLoading(true);
-      const data = await getUpcomingGames();
+      const data = await getFinishedGames();
       if (isMounted) {
         setGames(data);
         setLoading(false);
@@ -40,11 +40,10 @@ export default function Fixtures() {
   return (
     <div className="min-h-screen bg-slate-50">
         <Helmet >
-          <title>Fixtures - upcoming games scheduled</title>
-          <meta name="description" content="This is the fixtures page." />
-          <link rel="canonical" href="https://wacbasketball.vercel.app/fixtures" />
+          <title>Results - Latest Game Results</title>
+          <meta name="description" content="This is the results page." />
+          <link rel="canonical" href="https://wacbasketball.vercel.app/results" />
         </Helmet>
-
       {/* Banner */}
       <div
         className="relative flex min-h-50 w-full items-center bg-cover bg-center bg-no-repeat md:min-h-90"
@@ -57,26 +56,26 @@ export default function Fixtures() {
             DEX-HOMMES · Season 26-27
           </span>
           <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
-            Fixtures
+            Results
           </h1>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/90 sm:text-base md:text-lg">
-            Upcoming games for the current season. Filter by month to see
-            match dates, arenas, and ticket links.
+            Final scores from every game of the season. Filter by month to
+            review any match.
           </p>
         </div>
       </div>
-      
+          
       <Breadcrumb />
       
       {/* Tabs + games */}
       {games.length === 0 ? (
         <div className="mx-auto max-w-5xl px-4 py-24 text-center md:px-8">
           <p className="text-slate-600">
-            No upcoming games scheduled. Check back soon.
+            No results yet. Check back after the first game.
           </p>
         </div>
       ) : (
-        <GamesByMonth games={games} initialTab="current" />
+        <GamesByMonth games={games} initialTab="last" />
       )}
     </div>
   );

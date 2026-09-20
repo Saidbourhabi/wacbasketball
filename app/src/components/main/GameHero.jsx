@@ -56,6 +56,10 @@ export default function GameHero() {
 
   const showTickets = game.isHomeGame && game.ticketsUrl;
 
+  // Dynamic link + label for the secondary button.
+  const gamesLink = isFinished ? '/results' : '/fixtures';
+  const gamesLabel = isFinished ? 'All Results' : 'All Fixtures';
+
   return (
     <section className="mt-16 w-full">
       <div className="relative w-full overflow-hidden bg-[#fc0000] text-white">
@@ -64,10 +68,11 @@ export default function GameHero() {
           src={bgLogo}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 z-0 m-auto h-full w-full object-cover bg-cover bg-center bg-no-repeat opacity-20 select-none"
-          loading='lazy'
-          fetchPriority='high'
+          className="pointer-events-none absolute inset-0 z-0 h-full w-full select-none object-cover opacity-20"
+          loading="lazy"
+          fetchPriority="high"
         />
+
 
         <div className="relative z-10 flex min-h-80 flex-col justify-between px-6 py-10 sm:min-h-125 sm:px-12 sm:py-14 md:min-h-135 md:px-20 md:py-16 lg:min-h-145 lg:px-28 lg:py-20 xl:px-40">
           {/* --------------------------------------------- */}
@@ -77,7 +82,7 @@ export default function GameHero() {
             <span>{game.leagueName}</span>
             {game.week && <span>{game.week}</span>}
             <span>
-              {formattedDate}  {formattedTime}
+              {formattedDate} · {formattedTime}
             </span>
             {game.arena && <span>{game.arena}</span>}
           </div>
@@ -102,9 +107,12 @@ export default function GameHero() {
 
             {/* Center: time or final score */}
             {isFinished || isLive ? (
-              <div className="flex shrink-0 items-baseline gap-3 sm:gap-6 md:gap-8 lg:gap-10">
+              <div className="flex shrink-0 items-baseline gap-2 sm:gap-4 md:gap-6 lg:gap-8">
                 <span className="text-5xl font-black tabular-nums leading-none sm:text-7xl md:text-8xl lg:text-9xl">
                   {game.homeScore ?? 0}
+                </span>
+                <span className="text-3xl font-bold text-white/50 sm:text-5xl md:text-6xl lg:text-7xl">
+                  –
                 </span>
                 <span className="text-5xl font-black tabular-nums leading-none sm:text-7xl md:text-8xl lg:text-9xl">
                   {game.awayScore ?? 0}
@@ -124,6 +132,7 @@ export default function GameHero() {
                 src={game.awayTeamLogo}
                 alt={game.awayTeamName}
                 className="h-16 w-16 object-contain sm:h-24 sm:w-24 md:h-28 md:w-28 lg:h-36 lg:w-36 xl:h-40 xl:w-40"
+                loading="lazy"
               />
               <span className="text-[10px] font-bold uppercase tracking-wider leading-tight sm:text-xs md:text-sm lg:text-base xl:text-lg">
                 {game.awayTeamName}
@@ -149,16 +158,16 @@ export default function GameHero() {
                   href={game.ticketsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-sm bg-white px-6 py-3 text-sm uppercase tracking-wider text-black transition-colors hover:bg-white/85 sm:px-8 sm:py-3.5 sm:text-xs"
+                  className="inline-flex items-center justify-center rounded-sm bg-white px-6 py-3 text-xs font-bold uppercase tracking-wider text-black transition-colors hover:bg-white/85 sm:px-8 sm:py-3.5"
                 >
                   Match Ticket
                 </a>
               )}
               <Link
-                to="/fixtures"
-                className="inline-block text-white border border-white px-6 py-2 text-sm transition uppercase tracking-wider hover:bg-white hover:text-[#fc0000] sm:px-8 sm:py-3.5 sm:text-xs"
+                to={gamesLink}
+                className="inline-flex items-center justify-center rounded-sm border border-white bg-transparent px-6 py-3 text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-white hover:text-[#fc0000] sm:px-8 sm:py-3.5"
               >
-                All Games
+                {gamesLabel}
               </Link>
             </div>
           </div>

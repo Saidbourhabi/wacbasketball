@@ -131,7 +131,6 @@ export async function getFeaturedGame() {
   return await getLastGame();
 }
 
-
 export async function getAllGames() {
   try {
     const response = await client.getEntries({
@@ -145,6 +144,42 @@ export async function getAllGames() {
     return [];
   }
 }
+
+// Upcoming + live games, ascending by date (earliest first).
+export async function getUpcomingGames() {
+  try {
+    const response = await client.getEntries({
+      content_type: 'game',
+      'fields.published': true,
+      'fields.status[in]': 'upcoming,live',
+      order: 'fields.date',
+    });
+    return response.items.map(mapGame);
+  } catch (error) {
+    console.error('Error fetching upcoming games:', error);
+    return [];
+  }
+}
+
+// Finished games only, descending by date (most recent first).
+export async function getFinishedGames() {
+  try {
+    const response = await client.getEntries({
+      content_type: 'game',
+      'fields.published': true,
+      'fields.status': 'finished',
+      order: '-fields.date',
+    });
+    return response.items.map(mapGame);
+  } catch (error) {
+    console.error('Error fetching finished games:', error);
+    return [];
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Standings
+// ---------------------------------------------------------------------------
 
 export async function getAllStandings() {
   try {
