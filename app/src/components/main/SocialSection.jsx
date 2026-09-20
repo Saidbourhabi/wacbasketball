@@ -6,17 +6,15 @@ import {
   FaXTwitter,
   FaYoutube,
   FaTiktok,
-  FaLinkedinIn,
 } from 'react-icons/fa6';
 
 
 const socials = [
-  { name: 'Facebook', icon: FaFacebookF, href: 'https://facebook.com' },
-  { name: 'Instagram', icon: FaInstagram, href: 'https://instagram.com' },
-  { name: 'X', icon: FaXTwitter, href: 'https://x.com' },
-  { name: 'YouTube', icon: FaYoutube, href: 'https://youtube.com' },
-  { name: 'TikTok', icon: FaTiktok, href: 'https://tiktok.com' },
-  { name: 'LinkedIn', icon: FaLinkedinIn, href: 'https://linkedin.com' },
+  { name: 'Facebook', icon: FaFacebookF, href: 'https://www.facebook.com/wydadbasketball' },
+  { name: 'Instagram', icon: FaInstagram, href: 'https://instagram.com/wacbasketball' },
+  { name: 'X', icon: FaXTwitter, href: 'https://x.com/wacbasketball38' },
+  { name: 'YouTube', icon: FaYoutube, href: 'https://www.youtube.com/@wacbasketball' },
+  { name: 'TikTok', icon: FaTiktok, href: 'https://www.tiktok.com/@wacbasketball' },
 ];
 
 const SocialIcon = ({ icon: Icon, href, name }) => {
