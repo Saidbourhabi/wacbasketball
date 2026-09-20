@@ -145,3 +145,27 @@ export async function getAllGames() {
     return [];
   }
 }
+
+export async function getAllStandings() {
+  try {
+    const response = await client.getEntries({
+      content_type: 'standing',
+      'fields.published': true,
+      order: 'fields.position',
+      limit: 100,
+    });
+    return response.items.map((item) => ({
+      id: item.sys.id,
+      position: item.fields.position,
+      teamName: item.fields.teamName,
+      teamLogo: getMediaUrl(item.fields.teamLogo),
+      gamesPlayed: item.fields.gamesPlayed ?? 0,
+      wins: item.fields.wins ?? 0,
+      losses: item.fields.losses ?? 0,
+      points: item.fields.points ?? 0,
+    }));
+  } catch (error) {
+    console.error('Error fetching standings:', error);
+    return [];
+  }
+}

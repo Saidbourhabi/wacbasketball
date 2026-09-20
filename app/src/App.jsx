@@ -9,8 +9,8 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 import NotFound from './pages/NotFound';
 import Contact from './pages/contact/Contact';
 import Fixtures from './pages/fixtures/Fixtures';
-import Tables from './pages/fixtures/Tables';
 import Results from './pages/fixtures/Results';
+import Standings from './pages/fixtures/Standings';
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
         {/* //*Fixtures */}
         <Route path="/fixtures" element={<Fixtures />} />
         <Route path="/fixtures/results" element={<Results />} />
-        <Route path="/fixtures/tables" element={<Tables />} />
+        <Route path="/fixtures/standings" element={<Standings />} />
       </Route>
         {/* // !Not Found */}
       <Route path="*" element={<NotFound />} />
