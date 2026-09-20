@@ -50,8 +50,8 @@ createRoot(document.getElementById('root')).render(
             }}
           />
         </Auth0Provider>
-        <Analytics/>
       </HelmetProvider>
+      <Analytics/>
     </BrowserRouter>
   </StrictMode>
 );
