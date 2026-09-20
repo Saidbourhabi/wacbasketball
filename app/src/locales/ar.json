@@ -1,0 +1,37 @@
+{
+    "header": {
+    "signin": "تسجيل الدخول",
+    "myAccount": "حسابي",
+    "logout": "تسجيل الخروج"
+  },
+    "navigation": {
+    "home": "الرئيسية",
+    "news": "الأخبار",
+    "club": "النادي",
+    "club_ourview": "وجهات نظرنا",
+    "club_history": "تاريخنا",
+    "club_honours": "أوسمتنا",
+    "club_trophies": "كؤوسنا",
+    "club_management": "الإدارة",
+    "club_sponsors": "الرعاية",
+    "club_memberships": "العضويات",
+    "club_contact": "العضويات",
+    "schedule_results": "الجدول والنتائج",
+    "schedule_results_results": "النتائج",
+    "schedule_results_fixtures": "المباريات",
+    "schedule_results_standings": "الترتيب",
+    "roster": "الفريق",
+    "roster_mens": "كرة السلة للرجال",
+    "roster_womens": "كرة السلة للنساء",
+    "roster_staff": "الموظفون",
+    "roster_u23": "U23",
+    "academy": "الأكاديمية",
+    "academy_camp": "معسكر",
+    "academy_philosophy": "الفلسفة",
+    "store": "المتجر",
+    "tickets": "التذاكر"
+  },
+    "footerTagline": "بناء تجارب عالمية.",
+    "footerCopyright": "نادي الوداد الرياضي. جميع الحقوق محفوظة.",
+    "jumbotronBTN": "اتصل بنا"
+}

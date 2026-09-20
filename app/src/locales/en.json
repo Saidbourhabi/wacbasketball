@@ -1,0 +1,38 @@
+{
+  "header": {
+    "signin": "Login",
+    "myAccount": "My Account",
+    "logout": "Log Out"
+  },
+  "navigation": {
+    "home": "Home",
+    "news": "News",
+    "club": "Club",
+    "club_ourview": "Ourview",
+    "club_history": "Our History",
+    "club_honours": "Our Honours",
+    "club_trophies": "Our Trophies",
+    "club_management": "Management",
+    "club_sponsors": "Sponsors",
+    "club_memberships": "Memberships",
+    "club_contact": "Contact Us",
+    "schedule_results": "Schedule & Results",
+    "schedule_results_results": "Results",
+    "schedule_results_fixtures": "Fixtures",
+    "schedule_results_standings": "Standings",
+    "roster": "Roster",
+    "roster_mens": "Men's Basketball",
+    "roster_womens": "Women's Basketball",
+    "roster_staff": "Staff",
+    "roster_u23": "U23",
+    "academy": "Academy",
+    "academy_camp": "Camp",
+    "academy_philosophy": "Philosophy",
+    "store": "Store",
+    "tickets": "Tickets"
+  },
+  "footerTagline": "Building global experiences.",
+  "footerCopyright": "Wydad Athletic Club. All rights reserved.",
+  "jumbotronBTN": "Contact Us"
+}
+
