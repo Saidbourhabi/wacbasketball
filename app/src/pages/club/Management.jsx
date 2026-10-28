@@ -3,7 +3,7 @@ import banner from "../../assets/banner.webp";
 
 const teamMembers = [
   { id: 1, name: "Ali Mourafi", role: "President", image: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1785348998/IMG_3780_eha3g3.jpg" },
-  { id: 2, name: "Khalid Hachemi", role: "Vice President", image: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1785348998/IMG_3780_eha3g3.jpg" },
+  { id: 2, name: "Khalid Hachemi", role: "Vice President", image: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1792947478/copy_of_alisakine_c4cu46.webp" },
   { id: 3, name: "Simon Konecki", role: "Treasurer", image: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1785348998/IMG_3780_eha3g3.jpg" },
   { id: 4, name: "Sophia Lala", role: "Secretary", image: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1785348998/IMG_3780_eha3g3.jpg" },
   { id: 5, name: "Nizar Hafiani", role: "Member", image: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1785348998/IMG_3780_eha3g3.jpg" },

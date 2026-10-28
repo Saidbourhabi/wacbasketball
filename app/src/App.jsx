@@ -12,6 +12,8 @@ import Fixtures from './pages/fixtures/Fixtures';
 import Results from './pages/results/Results';
 import Standings from './pages/standings/Standings';
 import Management from './pages/club/Management';
+import Mens from './pages/roster/Mens';
+import Womens from './pages/roster/Womens';
 
 function App() {
   return (
@@ -36,6 +38,9 @@ function App() {
         <Route path="/standings" element={<Standings />} />
         {/* // *The Club */}
         <Route path="/club/management" element={<Management />} />
+        {/* // *Roster */}
+        <Route path="/roster/mens" element={<Mens />} />
+        <Route path="/roster/womens" element={<Womens />} />
       </Route>
         {/* // !Not Found */}
       <Route path="*" element={<NotFound />} />

@@ -71,8 +71,8 @@ export default function Standings() {
       
         {/* Banner content — left-aligned, vertically centered */}
         <div className="relative z-10 mx-auto w-full max-w-md px-6 py-10 sm:max-w-3xl sm:px-8 sm:py-14 md:px-10 md:py-16 lg:max-w-6xl">
-          <span className="mb-3 inline-block text-[10px] font-bold uppercase tracking-[0.25em] text-white/80 sm:text-xs">
-            DEX-HOMMES · Season 26-27
+          <span className="mb-3 inline-block text-[10px] font-bold uppercase tracking-[0.25em] text-black sm:text-xs">
+            DBL · Season 26-27
           </span>
           <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
             Standings

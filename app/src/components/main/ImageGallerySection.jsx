@@ -1,8 +1,8 @@
 const categories = [
-  { id: 1, src: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1789838860/store2_gygbod.jpg", alt: "Dry Shampoo" },
-  { id: 2, src: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1789856126/store4_uikzeu.jpg", alt: "Eye Primer" },
-  { id: 3, src: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1789838839/store_oqnrny.jpg", alt: "Face Primer" },
-  { id: 3, src: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1789856132/store3_dlm324.jpg", alt: "Face Primer" },
+  { id: 1, src: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1789838860/store2_gygbod.jpg", alt: "Kit 2" },
+  { id: 2, src: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1789856126/store4_uikzeu.jpg", alt: "Kit 2" },
+  { id: 3, src: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1789838839/store_oqnrny.jpg", alt: " Kit 3" },
+  { id: 4, src: "https://res.cloudinary.com/dgzn9nczh/image/upload/v1789856132/store3_dlm324.jpg", alt: "Kit 4" },
 ];
 
 export default function ImageGallerySection() {

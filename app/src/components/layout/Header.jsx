@@ -51,7 +51,7 @@ const navigation = [
     ],
   },
   { name: 'Store', href: 'https://wacofficialbrand.com/', key: 'store' },
-  { name: 'Tickets', href: 'https://wacbasket.ticketing.ma/', key: 'tickets' },
+  { name: 'Tickets', href: 'https://webook.com/en/MA/cas/sports-event/seasons/wac-backetball--season--ticket', key: 'tickets' },
 ];
 
 function StoreTicketLink({ href, translationKey }) {
