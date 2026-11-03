@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getFeaturedGame } from '../../utils/contentful';
-import bgLogo from '../../assets/w.jpg';
+import bgLogo from '../../assets/hero.jpg';
 
 export default function GameHero() {
   const [game, setGame] = useState(null);

@@ -19,10 +19,10 @@ export default function MatchCard({ game }) {
   const isHome = game.isHomeGame;
 
   return (
-    <div className="flex h-full flex-col justify-between  border border-[#fc0000] bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
+    <div className="flex h-full flex-col justify-between  border-2 border-[#fc0000] bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
       {/* Top row: League & Week */}
-      <div className="mb-5 flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-slate-500 sm:text-xs">
-        <span className="truncate pr-2">{game.leagueName}</span>
+      <div className="mb-5 flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-black sm:text-xs">
+        <span className="truncate text-black pr-2">{game.leagueName}</span>
         <span className="shrink-0">{game.week}</span>
       </div>
 
@@ -36,17 +36,17 @@ export default function MatchCard({ game }) {
             className="h-12 w-12 object-contain sm:h-14 sm:w-14"
             loading="lazy"
           />
-          <span className="line-clamp-2 text-[11px] font-bold text-slate-900 sm:text-xs md:text-sm">
+          <span className="line-clamp-2 text-[11px] font-bold text-black sm:text-xs md:text-sm">
             {game.homeTeamName}
           </span>
         </div>
 
         {/* Time & Date */}
         <div className="flex shrink-0 flex-col items-center justify-center">
-          <span className="text-xl font-black tabular-nums leading-none text-[#fc0000] sm:text-2xl md:text-3xl">
+          <span className="text-xl font-black tabular-nums leading-none text-[#fc0000] sm:text-2xl md:text-2xl">
             {formattedTime}
           </span>
-          <span className="mt-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 sm:text-xs">
+          <span className="mt-1 text-[10px] font-bold uppercase tracking-widest text-black sm:text-xs">
             {formattedDate}
           </span>
         </div>
@@ -59,26 +59,26 @@ export default function MatchCard({ game }) {
             className="h-12 w-12 object-contain sm:h-14 sm:w-14"
             loading="lazy"
           />
-          <span className="line-clamp-2 text-[11px] font-bold text-slate-900 sm:text-xs md:text-sm">
+          <span className="line-clamp-2 text-[11px] font-bold text-black sm:text-xs md:text-sm">
             {game.awayTeamName}
           </span>
         </div>
       </div>
 
       {/* Bottom row: Home/Away Badge & Arena */}
-      <div className="mt-auto flex items-center justify-start gap-3 border-t border-slate-100 pt-4">
+      <div className="mt-auto flex items-center justify-start gap-3 border-t border-[#fc0000] pt-4">
         <span
-          className={`inline-block shrink-0 rounded-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider ${
+          className={`inline-block shrink-0  px-2 py-1 text-[10px] font-bold uppercase tracking-wider ${
             isHome
-              ? 'bg-[#fc0000]/10 text-[#fc0000]'
-              : 'bg-slate-100 text-slate-600'
+              ? 'bg-[#fc0000] text-white'
+              : 'bg-black text-white'
           }`}
         >
           {isHome ? 'Home' : 'Away'}
         </span>
         
-        <span className="flex items-center gap-1.5 truncate text-[10px] font-semibold uppercase text-slate-500 sm:text-xs">
-          <FaMapMarkerAlt className="shrink-0 text-slate-400" />
+        <span className="flex items-center gap-1.5 truncate text-[10px] font-semibold uppercase text-black sm:text-xs">
+          <FaMapMarkerAlt className="shrink-0 text-[#fc0000]" />
           <span className="truncate">{game.arena}</span>
         </span>
       </div>

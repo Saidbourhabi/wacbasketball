@@ -14,6 +14,7 @@ import Standings from './pages/standings/Standings';
 import Management from './pages/club/Management';
 import Mens from './pages/roster/Mens';
 import Womens from './pages/roster/Womens';
+import Roster from './pages/roster/roster';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         {/* // *The Club */}
         <Route path="/club/management" element={<Management />} />
         {/* // *Roster */}
+        <Route path="/roster" element={<Roster />} />
         <Route path="/roster/mens" element={<Mens />} />
         <Route path="/roster/womens" element={<Womens />} />
       </Route>

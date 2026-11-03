@@ -4,6 +4,8 @@ import LatestNewsSwiper from "../../components/main/LatestNewsSwiper";
 import ImageGallerySection from '../../components/main/ImageGallerySection';
 import GameHero from '../../components/main/GameHero';
 import NextMatchesSwiper from '../../components/main/NextMatchesSwiper';
+import SponsorsSection from '../../components/main/SponsorsSection';
+import HeritageSection from '../../components/main/HeritageSection';
 
 const Home = () => {
     return (
@@ -17,7 +19,9 @@ const Home = () => {
             <NextMatchesSwiper />
             <LatestNewsSwiper />
             <ImageGallerySection />
+            <HeritageSection />
             <SocialSection />
+            <SponsorsSection />
         </main>
     );
 };

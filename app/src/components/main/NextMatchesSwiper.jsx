@@ -49,7 +49,7 @@ export default function NextMatchesSwiper() {
       <div className="mx-auto max-w-md sm:max-w-3xl lg:max-w-6xl">
         {/* Header: Title left, Nav right */}
         <div className="mb-6 flex items-center justify-between gap-4">
-          <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
+          <h2 className="text-3xl font-bold text-[#fc0000] uppercase md:text-4xl">
             Next Matches
           </h2>
 
