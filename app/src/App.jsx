@@ -14,7 +14,7 @@ import Standings from './pages/standings/Standings';
 import Management from './pages/club/Management';
 import Mens from './pages/roster/Mens';
 import Womens from './pages/roster/Womens';
-import Roster from './pages/roster/roster';
+import Roster from './pages/roster/Roster';
 
 function App() {
   return (
